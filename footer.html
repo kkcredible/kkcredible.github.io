@@ -1,0 +1,178 @@
+        <footer>
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-widget">
+                                <div class="widget-title">
+                                    <h4>About KKCredible</h4>
+                                </div>
+                                <div class="text-box">
+                                    <p>
+                                        Killol has a vast experience of 12 Year into financial industry especially Mutual Funds, and was heading HDFC Mutual Fund Saurastra Region till May 15.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-widget">
+                                <div class="widget-title">
+                                    <h4>Navigation</h4>
+                                </div>
+                                <ul class="footer-nav">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us.html">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact-us.html">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Download</a>
+                                    </li>
+                                    <li>
+                                        <a href="insurance-services.html">Insurance</a>
+                                    </li>
+                                    <li>
+                                        <a href="mutual-funds-services.html">Mutual Funds</a>
+                                    </li>
+                                    <li>
+                                        <a href="fixed-income-services.html">Fixed Income</a>
+                                    </li>
+                                    <li>
+                                        <a href="pms-services.html">PMS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <br><br>
+                            <div class="footer-widget" style="padding-top: 10px;">
+                                <ul class="footer-nav">
+                                    <li>
+                                        <a href="equity-services.html">Equity</a>
+                                    </li>
+                                    <li>
+										<a href="what-financial-planning.html">What is financial planning</a>
+									</li>
+
+									<li>
+										<a href="financial-concepts.html">Financial Concepts</a>
+									</li>
+
+									<li>
+										<a href="basics-of-investment.html">Basics of Investment</a>
+									</li>
+
+									<li>
+										<a href="investment-avenues.html">Investment Avenues</a>
+									</li>
+
+									<li>
+										<a href="asset-allocation.html">Asset allocation</a>
+									</li>
+
+									<li>
+										<a href="strategy-of-investments.html">Strategy of Investments</a>
+									</li>
+
+									<li>
+										<a href="portfolios-and-diversifications.html">Portfolios and Diversifications</a>
+									</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12">
+                            <div class="footer-widget" style="padding-top: 10px;">
+                                <br><br>
+                                <ul class="lasts-posts">
+                                    <li>
+                                        <a href="common-investment-myths.html">Common Investment Myths</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="5-things-to-do-with-your-money.html">5 things to do with your money</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="5-dont-s-dealing-with-your-money.html">5 dont's dealing with your money</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="time-to-change-advisor.html">Time to change advisor</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btm">
+                <div class="container">
+                    <div class="row">
+                        <span class="copyright">&copy; Copyright 2018
+                            <a href="index.html" title="KKCredible">kkcredible</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- scrollToTop -->
+        <a href="#" class="scrollToTop">
+            <i class="icon-angle-up"></i>
+        </a>
+    </div>
+
+    <!-- End Container -->
+    <!-- Js File -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/gmap3.min.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
+
+    <!-- Custom js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".contact-form").submit(function (event) {
+                event.preventDefault();
+
+                $.ajax({
+                    url: "https://formspree.io/kkcredible@gmail.com",
+                    method: "POST",
+                    data: $(this).serialize(),
+                    dataType: "json"
+                }).done(function (json) {
+                    var message = `
+                        <div class="alert alert-success">
+                            <strong>Success!</strong> Mail Send Sucessfully.
+                        </div>
+                    `;
+                    $(".error-message").html(message);
+
+                    $('.contact-form')[0].reset();
+                }).fail(function (xhr, status, errorThrown) {
+                    var message = `
+                        <div class="alert alert-danger">
+                            <strong>Error!</strong> Sorry, there was a problem!
+                        </div>
+                    `;
+
+                    $(".error-message").html(message);
+                })
+            });
+        });
+    </script>
+</body>
+</html>
