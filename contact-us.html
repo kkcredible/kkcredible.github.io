@@ -301,40 +301,7 @@
             </div>
         </section>
 
-        <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyAFoUTVRk7cE9wxy0-IcSlLOMNIMEexJp8&callback=initMap"></script>
-        <script>
-        var gmMapDiv = $("#map-section");
-
-        if (gmMapDiv.length) {
-                var gmCenterAddress = gmMapDiv.attr("data-address");
-                var gmMarkerAddress = gmMapDiv.attr("data-address");
-
-                gmMapDiv.gmap3({
-                action: "init",
-                marker: {
-                    address: gmMarkerAddress,
-                    options: {
-                        icon: "images/others/marker.png"
-                    }
-                },
-                map: {
-                    options: {
-                        zoom: 18,
-                        zoomControl: true,
-                        zoomControlOptions: {
-                            style: google.maps.ZoomControlStyle.SMALL
-                        },
-                        mapTypeControl: false,
-                        scaleControl: false,
-                        scrollwheel: false,
-                        draggable: true,
-                    }
-                }
-            });
-        }
-        </script>
-
-                <footer>
+        <footer>
             <div class="main-footer">
                 <div class="container">
                     <div class="row">
@@ -509,6 +476,39 @@
                 })
             });
         });
+    </script>
+
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyAFoUTVRk7cE9wxy0-IcSlLOMNIMEexJp8&callback=initMap"></script>
+    <script>
+    var gmMapDiv = $("#map-section");
+
+    if (gmMapDiv.length) {
+            var gmCenterAddress = gmMapDiv.attr("data-address");
+            var gmMarkerAddress = gmMapDiv.attr("data-address");
+
+            gmMapDiv.gmap3({
+            action: "init",
+            marker: {
+                address: gmMarkerAddress,
+                options: {
+                    icon: "images/others/marker.png"
+                }
+            },
+            map: {
+                options: {
+                    zoom: 18,
+                    zoomControl: true,
+                    zoomControlOptions: {
+                        style: google.maps.ZoomControlStyle.SMALL
+                    },
+                    mapTypeControl: false,
+                    scaleControl: false,
+                    scrollwheel: false,
+                    draggable: true,
+                }
+            }
+        });
+    }
     </script>
 </body>
 </html>
