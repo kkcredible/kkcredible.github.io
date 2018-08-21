@@ -2,11 +2,11 @@
 /*
     Theme Name: ConsultPlus
     Author: Style Themes
-    Author URI: //themeforest.net/user/style-themes
+    Author URI: http://themeforest.net/user/style-themes
     Description: Responsive Construction and Renovation Template.
     Version: 1.0
     License: GNU General Public License version 3.0
-    License URI: //www.gnu.org/licenses/gpl-3.0.html
+    License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
 /*-------------------------------------------------
  =  Table of Css
@@ -697,7 +697,7 @@ span.count-number-dsc {
 
 .services .service-info, .team .team-info {
     padding: 24px 28px 22px;
-    border: 3px solid #f2f2f2;
+    border: 1px solid #f2f2f2;
 }
 
 .services .service-item h4 {
@@ -801,7 +801,7 @@ section.testimonials {
 }
 
 .testimonials{
-    background: url('../images/others/1p.jpg') center fixed;
+    background: url('../images/others/bread-crumbs.png') center fixed;
     position: relative;
     background-size: cover;
     -webkit-background-size: cover;
