@@ -273,6 +273,9 @@
             min-width: 360px;
             min-height: 686px;
         }
+        .youtube-video {
+            margin: 30px 10px;
+        }
     </style>
     <!-- Page heading -->
 
@@ -314,10 +317,15 @@
         }
 
         function getVideoTag() {
-            var video = '<div class="col-md-4"><div class="service-item"><video width="380" autoplay="autoplay"><source src="images/downloads/videos/';
-            var randomIndex = Math.floor(Math.random() * videoURLs.length);
-            video += videoURLs[randomIndex];
-            video += '\" type="video/mp4"><source src="mov_bbb.ogg" type="video/ogg">Your browser does not support HTML5 video.</video></div></div>';
+            var videos = [
+                'g_JfCm34adY', 'yI4sJ-f5fIA', 'WGdQNkGkFzU', 'qf7StPSIp9o', 'H2glTF3QmTA', 'wg-uzI1XfNc', 'atF8TrOJUWE', 'SdkpigbRMJg', 'kcsFdaV9Sfg', 'ynFmqVNDpBo', 'Cr9PcACmoz8', 'FNrpBzfb-JU', '0_Qpq27a7_8', 'g0TJusdPK2o', 'b6D__NoXe-w', 'ntEgX3UYoQs', 'cPNQYeBaYk4', '_qONyBvRpVI', 'A5HYToPDl6A', 'D14RjMIc3eM', 'CyqMt0DWqCk', '-EpvkuTEwdA', 'U-rhmew73og', 'y-6RKWTnAgw', 'I2V8TWmOB-0', 'fq4r66Sskzw', '2Ewz6cVNkS4', 'dOjvuzqEGiw', '9UJgxYOwoB8', 'GGasOSkVlEs', 'SEvk4D2dUAU', 'EEB39msgpxo', 'hfkh6PPqny4', 'JrJro8JvFkU', 'T8wYm1ErMGI', 'lyNzP2rT_dQ', 'E9D6JhlNyFM', 'tSocIPvlnyY', '_fjxraU5QFU', 'xVxatGtPYj4', 'aip3-8uE4iA', 'OkuvmhNxRVE', 'NSarOrysNbs', 'sN2RHVUQ5ds', 'SiV2BD77e38', 'svV5rBmjbms', 'JzQOUk6Hdms', 'W8k0MVH9dQE', 'j9qC2HHRVos', 'C9Mu_Z8pH5Y', 'FgQH74eVP4M', 'ZwEBZG1T3VA', '-m6nZ1jGaHg', 'OEUNsvFHYOE', 'qybpPZpBwI8', 'p25JQkpTFEI',
+            ];
+
+            var index=Math.floor(Math.random() * videos.length);
+            var html='<div id="video"><h3>Random Video</h3> </div>';
+
+            var video = '<div class="col-xs-12 col-sm-6 col-md-4"><div class="embed-responsive embed-responsive-4by3"><iframe class="youtube-video embed-responsive-item" src="http://www.youtube.com/embed/' + videos[index] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div></div>';
+
             return video;
         }
 
