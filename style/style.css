@@ -796,7 +796,7 @@ section.about-us-img{
 }
 /* --- testimonials --- */
 section.testimonials {
-    padding-top: 90px;
+    padding-top: 40px;
     padding-bottom: 0;
 }
 
@@ -819,6 +819,7 @@ section.testimonials {
 }
 .testimonials .section-title h2 {
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 .testimonials .section-title h2:after {
     display: none;
@@ -865,7 +866,7 @@ section.testimonials {
 	color: #D6D6D6;
 	line-height: 16px;
 	letter-spacing: 1px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
 }
 
 .testimonial-image {
@@ -1875,4 +1876,7 @@ caption {
 .outer-news {
     overflow-y: auto;
     height: 500px;
+}
+.mb-5 {
+    margin-bottom: 5rem;
 }

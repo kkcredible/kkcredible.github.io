@@ -48,11 +48,19 @@
                             </ul>
 
                             <div class="login-button">
-                                <a href="https://kkcredible.my-portfolio.in"
+                                <a href="https://www.nsenmf.com/MFDLogin.aspx"
                                     class="theme-btn appt-btn"
                                     target="_blank"
                                 >
                                     Login
+                                </a>
+                            </div>
+
+                            <div class="login-button">
+                                <a href="index.html"
+                                    class="theme-btn appt-btn"
+                                >
+                                    <i class="icomoon-icon-home"></i>
                                 </a>
                             </div>
                         </div>
@@ -242,7 +250,7 @@
                                 </li>
 
                                 <li class="drop">
-                                    <a href="">Blog/Newsletter</a>
+                                    <a href="">Blog / Newsletter</a>
                                 </li>
 
                                 <li class="drop">
@@ -255,6 +263,10 @@
 
                                 <li>
                                     <a href="testimonials.html">Testimonials</a>
+                                </li>
+
+                                <li>
+                                    <a href="awards_trainings.html">Awards / Trainings</a>
                                 </li>
                             </ul>
                         </div>
@@ -672,6 +684,71 @@
                     $(".error-message").html(message);
                 })
             });
+        });
+
+        var testimonials = [
+            "I strongly recommend Killol & his team to anyone who wants to invest for long term since the advice they gave was very easy to understand, thoroughly professional and totally as per my requirements.",
+            "Reliable, trustworthy and sound advice. Advice to one necessarily doesn't fit another ie financial advice for every person is different based on their profile and requirement which K K Credible team does in right manner.....",
+            "Killobhai's customer centric approach and educating them with underlying risk & reward in any investment proposition holds him in good stead with his customers.....",
+            "Amid hectic professional life, I had no time to learn share market nitty-gritty and there I got help from finance wizard Mr. Killol Karia of K K credible who introduced me to SIPs in mutual fund and slowly diversified in to debt FMP, NCD, hybrid and balance MF as per my requirement in terms of horizon, tax savings etc. Now my investment need is in Auto mode and still giving me 12% to 15% CAGR in any market conditions.",
+            "I would highly recommend M/s. K K Credible financial services as a helpful tool for keeping track of my investments. Mr Killol Karia is an excellent mutual fund adviser for keeping track of my investments' performance, for projecting income and for creating reports on almost anything I want to know in almost any form I would want to know it.",
+            "Killol is dedicated and passionate towards his clients interest. He possesses sound knowledge and abilities to put the same to his client’s benefits. Wishing him all the best for his endeavour.",
+            "Dear Killol, I still remember I was the first investor when you launched your company. The way in which you expressed the confidence in investment in Mutual Funds, made me to be in with Mutual Funds in your firm. It was really one of the best decision we took and I am still reaping handsome profit out of it. I recommend  everybody to go ahead investing with Killol.",
+        ];
+
+        var index = Math.floor(Math.random() * testimonials.length);
+        if ($('#testimonial-body')) {
+            $('#testimonial-body').html(getTestimonial(testimonials[index]));
+        }
+        function getTestimonial(string) {
+            if (string.length > 193) {
+                return string.substring(0, 193) + '...';
+            } else {
+                return string;
+            }
+        }
+
+        function getAwardsImages() {
+            var awards = [
+                '/china-2017.jpg',
+                '/icici-2017-bangkok.jpg',
+                '/malasiya-2016.jpg',
+                '/rising-star-award.jpg',
+            ];
+            var awardsImages = '';
+
+            for (var i = 0; i < awards.length; i++) {
+                awardsImages += '<div class="col-md-4 mb-5"><div class="service-item second-row"><img src=\"images/loader.gif" data-image="images/awards/' + awards[i] + '" class="img-responsive async-img"></div></div>';
+            }
+
+            return awardsImages;
+        }
+
+        function getTrainingsImages() {
+            var trainings = [
+                '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg',
+            ];
+            var trainingsImages = '';
+
+            for (var i = 0; i < trainings.length; i++) {
+                trainingsImages += '<div class="col-md-4 mb-5"><div class="service-item second-row"><img src=\"images/loader.gif" data-image="images/about-us/' + trainings[i] + '" class="img-responsive async-img"></div></div>';
+            }
+
+            return trainingsImages;
+        }
+
+        $('#awards-images').html(getAwardsImages());
+        $('#trainings-images').html(getTrainingsImages());
+
+        $.map($('[data-image]'), function(element) {
+            var image = new Image()
+            image.src = $(element).attr("data-image");
+            image.onload = function() {
+                if ($(element).attr("data-image")) {
+                    $(element).attr("src", $(element).attr("data-image"));
+                    $(element).removeClass("async-img");
+                }
+            }
         });
     </script>
 </body>
