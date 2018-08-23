@@ -142,17 +142,6 @@ jQuery( document ).ready(function( $ ) {
   /*----------------------------------------------------------------------*/
   /* =  Fancy Box
   /*----------------------------------------------------------------------*/
-
-    $(".prettyPhoto").prettyPhoto({
-        show_title: false,
-        slideshow: 3000,
-        overlay_gallery: true,
-        social_tools: ''
-      });
-
-      /*----------------------------------------------------------------------*/
-      /* =  scroll to top
-      /*----------------------------------------------------------------------*/
         $(window).scroll(function(){
           if ($(this).scrollTop() > 300) {
             $('.scrollToTop').fadeIn();

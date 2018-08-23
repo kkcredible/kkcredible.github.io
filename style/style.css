@@ -1868,15 +1868,30 @@ caption {
     flex: 1;
     padding: 16px;
 }
-@media only screen and (max-width: 982px){
-    .col-container {
-        display: unset;
-    }
-}
 .outer-news {
     overflow-y: auto;
     height: 500px;
 }
 .mb-5 {
     margin-bottom: 5rem;
+}
+.transation-button {
+    text-align: center;
+}
+.transation-button > .login-button {
+    text-align: center;
+    float: left;
+}
+@media only screen and (max-width: 982px) {
+    .transation-button > .login-button {
+        text-align: center;
+        float: unset;
+    }
+    .login-button {
+        float: unset;
+        display: inline-block;
+    }
+    .mobile-center {
+        text-align: center;
+    }
 }
