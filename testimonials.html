@@ -279,7 +279,7 @@
                                 </li>
 
                                 <li class="drop">
-                                    <a href="">Blog / Newsletter</a>
+                                    <a href="blog-and-newsletter.html">Blog / Newsletter</a>
                                 </li>
 
                                 <li>
@@ -306,8 +306,30 @@
                     <div class="col">
                         <div class="testimonial">
                             <p class="description">
+                                Mr Killol Karia has played an integral role in building our personal financial well being and we have every confidence in his efforts. His integrity and knowledge are invaluable and has a proactive approach in his work. He regularly assess our risk tolerance and reviews our portfolio, answers all our questions and make suggestions on any improvements he can make, thereby guide us in an appropriate direction. We would like to express our thanks for the professional, ethical and caring demeanor. I can highly recommend honest, reliable and ethical finanacial planner of K K credible services - Mr Killol Karia.
+                            </p>
+
+                            <div class="testimonial-image">
+                                <img width="80" height="80" src="images/testimonials/dr-kanan-and-dr-nirav-sangani.jpg" alt="Dr Kanan and Dr Nirav Sangani" draggable="false">
+                            </div>
+
+                            <h3 class="title">Dr Kanan and Dr Nirav Sangani</h3>
+
+                            <small class="post">- Anaesthetist and Cardiothoracic surgeon</small>
+                            <small class="post">- UAE</small>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-container">
+                    <div class="col">
+                        <div class="testimonial">
+                            <p class="description">
                                 I strongly recommend Killol & his team to anyone who wants to invest for long term since the advice they gave was very easy to understand, thoroughly professional and totally as per my requirements.
                             </p>
+
+                            <div class="testimonial-image">
+                                <img width="80" height="80" src="images/testimonials/brijesh-dhruv.jpg" alt="Brijesh Dhruv" draggable="false">
+                            </div>
 
                             <h3 class="title">Brijesh Dhruv</h3>
 
@@ -320,6 +342,10 @@
                             <p class="description">
                                 Reliable, trustworthy and sound advice. Advice to one necessarily doesn't fit another ie financial advice for every person is different based on their profile and requirement which K K Credible team does in right manner.....
                             </p>
+
+                            <div class="testimonial-image">
+                                <img width="80" height="80" src="images/others/1.jpg" alt="Dr Tejas Hapani" draggable="false">
+                            </div>
 
                             <h3 class="title">Dr Tejas Hapani</h3>
 
@@ -335,17 +361,26 @@
                                 Killobhai's customer centric approach and educating them with underlying risk & reward in any investment proposition holds him in good stead with his customers.....
                             </p>
 
+                            <div class="testimonial-image">
+                                <img width="80" height="80" src="images/testimonials/brijen-sampat.jpg" alt="BRIJEN SAMPAT" draggable="false">
+                            </div>
+
                             <h3 class="title">Brijen Sampat</h3>
 
                             <small class="post">- Chartered Accountant- Kalaria and Sampat,</small>
                             <small class="post">- Rajkot</small>
                         </div>
                     </div>
+
                     <div class="col">
                         <div class="testimonial">
                             <p class="description">
                                 Amid hectic professional life, I had no time to learn share market nitty-gritty and there I got help from finance wizard Mr. Killol Karia of K K credible who introduced me to SIPs in mutual fund and slowly diversified in to debt FMP, NCD, hybrid and balance MF as per my requirement in terms of horizon, tax savings etc. Now my investment need is in Auto mode and still giving me 12% to 15% CAGR in any market conditions.
                             </p>
+
+                            <div class="testimonial-image">
+                                <img width="80" height="80" src="images/testimonials/akshay-shah.jpg" alt="Akshay Shah" draggable="false">
+                            </div>
 
                             <h3 class="title">Akshay Shah</h3>
 
@@ -361,6 +396,10 @@
                                 I would highly recommend M/s. K K Credible financial services as a helpful tool for keeping track of my investments. Mr Killol Karia is an excellent mutual fund adviser for keeping track of my investments' performance, for projecting income and for creating reports on almost anything I want to know in almost any form I would want to know it.
                             </p>
 
+                            <div class="testimonial-image">
+                                <img width="80" height="80" src="images/testimonials/amitbhai-parekh.jpg" alt="Amitbhai Parekh" draggable="false">
+                            </div>
+
                             <h3 class="title">Amitbhai Parekh</h3>
 
                             <small class="post">- Parekh Tubes,</small>
@@ -372,6 +411,10 @@
                             <p class="description">
                                 Killol is dedicated and passionate towards his clients interest. He possesses sound knowledge and abilities to put the same to his client’s benefits. Wishing him all the best for his endeavour.
                             </p>
+
+                            <div class="testimonial-image">
+                                <img width="80" height="80" src="images/testimonials/jasmin-mehta.jpg" alt="Jasmin Mehta" draggable="false">
+                            </div>
 
                             <h3 class="title">Jasmin Mehta</h3>
 
@@ -386,6 +429,10 @@
                             <p class="description">
                                 Dear Killol, I still remember I was the first investor when you launched your company. The way in which you expressed the confidence in investment in Mutual Funds, made me to be in with Mutual Funds in your firm. It was really one of the best decision we took and I am still reaping handsome profit out of it. I recommend  everybody to go ahead investing with Killol.
                             </p>
+
+                            <div class="testimonial-image">
+                                <img width="80" height="80" src="images/testimonials/mukeshbhai-bhayani.jpg" alt="Mukeshbhai Bhayani" draggable="false">
+                            </div>
 
                             <h3 class="title">Mukeshbhai Bhayani</h3>
 
@@ -624,16 +671,20 @@
         $('#awards-images').html(getAwardsImages());
         $('#trainings-images').html(getTrainingsImages());
 
-        $.map($('[data-image]'), function(element) {
-            var image = new Image()
-            image.src = $(element).attr("data-image");
-            image.onload = function() {
-                if ($(element).attr("data-image")) {
-                    $(element).attr("src", $(element).attr("data-image"));
-                    $(element).removeClass("async-img");
+        loadImages();
+        function loadImages() {
+            $.map($('[data-image]'), function(element) {
+                var image = new Image()
+                image.src = $(element).attr("data-image");
+
+                image.onload = function() {
+                    if ($(element).attr("data-image")) {
+                        $(element).attr("src", $(element).attr("data-image"));
+                        $(element).removeClass("async-img");
+                    }
                 }
-            }
-        });
+            });
+        }
     </script>
 </body>
 </html>

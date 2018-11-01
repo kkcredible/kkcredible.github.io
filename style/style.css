@@ -1895,3 +1895,6 @@ caption {
         text-align: center;
     }
 }
+.single-service .testimonial-image {
+    text-align: left !important;
+}

@@ -279,7 +279,7 @@
                                 </li>
 
                                 <li class="drop">
-                                    <a href="">Blog / Newsletter</a>
+                                    <a href="blog-and-newsletter.html">Blog / Newsletter</a>
                                 </li>
 
                                 <li>
@@ -694,16 +694,20 @@
         $('#awards-images').html(getAwardsImages());
         $('#trainings-images').html(getTrainingsImages());
 
-        $.map($('[data-image]'), function(element) {
-            var image = new Image()
-            image.src = $(element).attr("data-image");
-            image.onload = function() {
-                if ($(element).attr("data-image")) {
-                    $(element).attr("src", $(element).attr("data-image"));
-                    $(element).removeClass("async-img");
+        loadImages();
+        function loadImages() {
+            $.map($('[data-image]'), function(element) {
+                var image = new Image()
+                image.src = $(element).attr("data-image");
+
+                image.onload = function() {
+                    if ($(element).attr("data-image")) {
+                        $(element).attr("src", $(element).attr("data-image"));
+                        $(element).removeClass("async-img");
+                    }
                 }
-            }
-        });
+            });
+        }
     </script>
 </body>
 </html>
