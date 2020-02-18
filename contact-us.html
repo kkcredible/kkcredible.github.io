@@ -173,7 +173,7 @@
                                         </li>
 
                                         <li>
-                                            <a href="equity-services.html">Equity</a>
+                                            <a href="insurance.html">Insurance</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -191,7 +191,7 @@
                                         </li>
 
                                         <li>
-                                            <a href="basics-of-investment.html">Basics of Investment</a>
+                                            <a href="investment-basics.html">Investment Basics</a>
                                         </li>
 
                                         <li>
@@ -209,22 +209,6 @@
                                         <li>
                                             <a href="portfolios-and-diversifications.html">Portfolios and Diversifications</a>
                                         </li>
-
-                                        <li>
-                                            <a href="common-investment-myths.html">Common Investment Myths</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="5-things-to-do-with-your-money.html">5 things to do with your money</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="5-dont-s-dealing-with-your-money.html">5 dont's dealing with your money</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="time-to-change-advisor.html">Time to change advisor</a>
-                                        </li>
                                     </ul>
                                 </li>
 
@@ -234,10 +218,6 @@
                                     <ul class="dropdown">
                                         <li>
                                             <a href="nri-services.html">NRI Services</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="nri-investment.html">NRI Investment</a>
                                         </li>
 
                                         <li>
@@ -265,15 +245,7 @@
                                         </li>
 
                                         <li>
-                                            <a href="children-education-planning.html">Children Education Planning</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="short-medium-long.html">Short Medium Long</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="customized-investment-plan.html">Customized Investment Plan</a>
+                                            <a href="children-education-planning.html">Children Education/Marriage Planning</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -291,44 +263,79 @@
                 </div>
             </div>
         </header>
-        <!--========================google-map========================== -->
-        <div class="google-map">
-            <div data-address="Kaka Sales Corporation, Centre Point, Karansinhji Rd, Karanpara, Rajkot, Gujarat 360001" id="map-section"></div>
-        </div>
-        <!-- google-map -->
+    <!--========================google-map========================== -->
+    <div class="google-map">
+        <div data-address="Kaka Sales Corporation, Centre Point, Karansinhji Rd, Karanpara, Rajkot, Gujarat 360001" id="map-section"></div>
+    </div>
+    <!-- google-map -->
 
-        <!--========================contact-us========================== -->
-        <section class="contact-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="error-message"></div>
-                        <form method="post" class="contact-form">
-                            <input type="text" name="_gotcha" style="display:none">
+    <!--========================contact-us========================== -->
+    <section class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="error-message"></div>
+                    <form method="post" class="contact-form">
+                        <input type="text" name="_gotcha" style="display:none">
 
-                            <input type="text" name="name" placeholder="Your Name" autofocus required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <input type="text" name="subject" placeholder="Subject" required>
-                            <textarea name="message" placeholder="Message"></textarea>
+                        <input type="text" name="name" placeholder="Your Name" autofocus required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Message"></textarea>
 
-                            <button type="submit" class="submit">submit now</button>
-                        </form>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="contact-info">
-                            <h4>Contact Info</h4>
-                            <p>Please meet us we will help you in resolving these issues...</p>
-                            <ul>
-                                <li><i class="icon-map-marker"></i>Kaka Sales Corporation, Centre Point, Karansinhji Rd, Karanpara, Rajkot-360002, Gujarat 360001.</li>
-                                <li><i class="icomoon-icon-phone"></i>0281 2223177</li>
-                                <li><i class="icomoon-icon-mail2"></i>kkcredible@gmail.com</li>
-                                <li><i class="icomoon-icon-clock"></i>Mon - Sat, 10AM to 6PM</li>
-                            </ul>
-                        </div>
+                        <button type="submit" class="submit">submit now</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <h4>Contact Info</h4>
+                        <p>Please meet us we will help you in resolving these issues...</p>
+                        <ul>
+                            <li><i class="icon-map-marker"></i>Kaka Sales Corporation, Centre Point, Karansinhji Rd, Karanpara, Rajkot-360002, Gujarat 360001.</li>
+                            <li><i class="icomoon-icon-phone"></i>0281 2223177</li>
+                            <li><i class="icomoon-icon-mail2"></i>kkcredible@gmail.com</li>
+                            <li><i class="icomoon-icon-clock"></i>Mon - Sat, 10AM to 6PM</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyBB4MPzf79kEgoFMmizAppGA45F9DaeidQ"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var gmMapDiv = $("#map-section");
+
+            if (gmMapDiv.length) {
+                    var gmCenterAddress = gmMapDiv.attr("data-address");
+                    var gmMarkerAddress = gmMapDiv.attr("data-address");
+
+                    gmMapDiv.gmap3({
+                    action: "init",
+                    marker: {
+                        address: gmMarkerAddress,
+                        options: {
+                            icon: "images/others/marker.png"
+                        }
+                    },
+                    map: {
+                        options: {
+                            zoom: 18,
+                            zoomControl: true,
+                            zoomControlOptions: {
+                                style: google.maps.ZoomControlStyle.SMALL
+                            },
+                            mapTypeControl: false,
+                            scaleControl: false,
+                            scrollwheel: false,
+                            draggable: true,
+                        }
+                    }
+                });
+            }
+        });
+    </script>
 
         <footer>
             <div class="main-footer">
@@ -381,7 +388,7 @@
                             <div class="footer-widget" style="padding-top: 10px;">
                                 <ul class="footer-nav">
                                     <li>
-                                        <a href="equity-services.html">Equity</a>
+                                        <a href="insurance.html">Insurance</a>
                                     </li>
                                     <li>
 										<a href="what-financial-planning.html">What is financial planning</a>
@@ -392,7 +399,7 @@
 									</li>
 
 									<li>
-										<a href="basics-of-investment.html">Basics of Investment</a>
+										<a href="investment-basics.html">Investment Basics</a>
 									</li>
 
 									<li>
@@ -410,28 +417,6 @@
 									<li>
 										<a href="portfolios-and-diversifications.html">Portfolios and Diversifications</a>
 									</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-6 col-xs-12">
-                            <div class="footer-widget" style="padding-top: 10px;">
-                                <br><br>
-                                <ul class="lasts-posts">
-                                    <li>
-                                        <a href="common-investment-myths.html">Common Investment Myths</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="5-things-to-do-with-your-money.html">5 things to do with your money</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="5-dont-s-dealing-with-your-money.html">5 dont's dealing with your money</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="time-to-change-advisor.html">Time to change advisor</a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -570,39 +555,6 @@
                 }
             });
         }
-    </script>
-
-    <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyAFoUTVRk7cE9wxy0-IcSlLOMNIMEexJp8&callback=initMap"></script>
-    <script>
-    var gmMapDiv = $("#map-section");
-
-    if (gmMapDiv.length) {
-            var gmCenterAddress = gmMapDiv.attr("data-address");
-            var gmMarkerAddress = gmMapDiv.attr("data-address");
-
-            gmMapDiv.gmap3({
-            action: "init",
-            marker: {
-                address: gmMarkerAddress,
-                options: {
-                    icon: "images/others/marker.png"
-                }
-            },
-            map: {
-                options: {
-                    zoom: 18,
-                    zoomControl: true,
-                    zoomControlOptions: {
-                        style: google.maps.ZoomControlStyle.SMALL
-                    },
-                    mapTypeControl: false,
-                    scaleControl: false,
-                    scrollwheel: false,
-                    draggable: true,
-                }
-            }
-        });
-    }
     </script>
 </body>
 </html>
