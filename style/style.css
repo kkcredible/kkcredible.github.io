@@ -1732,9 +1732,16 @@ ul.circle {
     list-style-type: circle;
     padding-left: 20px;
 }
+ul.circle > li.p-3 {
+    padding: 8px;
+}
 ol.number {
     padding-left: 20px;
     list-style-type: decimal;
+    font-weight: 600;
+}
+ol.number > li.p-3 {
+    padding: 8px;
 }
 .line-elipsis-3 {
     height: 90px;
@@ -1752,6 +1759,9 @@ caption {
 .paragraph-indent {
     text-indent: 5em;
     font-size: 16px;
+}
+.paragraph-indent.small-font {
+    font-size: 13px;
 }
 .post-content p, .post-content li {
     font-size: 16px;
@@ -1897,4 +1907,7 @@ caption {
 }
 .single-service .testimonial-image {
     text-align: left !important;
+}
+.m-0 {
+    margin: 0 !important;
 }
