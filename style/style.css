@@ -1626,16 +1626,6 @@ section.testimonials {
 /*-------------------------------------------------*/
 /* =  Contact page
 /*-------------------------------------------------*/
-/* --------google map-------------*/
-.google-map{
-    position: relative;
-}
-#map-section{
-    height: 550px;
-    position: relative;
-    z-index: 1;
-}
-
 .contact-us .contact-info ul li {
     display: block;
     font-family: 'Montserrat', sans-serif;
@@ -1910,4 +1900,7 @@ caption {
 }
 .m-0 {
     margin: 0 !important;
+}
+.d-inline-block{
+    display: inline-block;
 }

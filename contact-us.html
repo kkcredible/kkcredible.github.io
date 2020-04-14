@@ -267,14 +267,12 @@
                     </nav>
                 </div>
             </div>
-        </header>
-    <!--========================google-map========================== -->
-    <div class="google-map">
-        <div data-address="Kaka Sales Corporation, Centre Point, Karansinhji Rd, Karanpara, Rajkot, Gujarat 360001" id="map-section"></div>
-    </div>
-    <!-- google-map -->
+        </header>    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6366889949286!2d70.80179301495451!3d22.291748185328117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb0bb78822fb%3A0x8d27b6444b8f0530!2sK%20K%20CREDIBLE%20FINANCIAL%20SERVICES!5e0!3m2!1sen!2sin!4v1586868865119!5m2!1sen!2sin"
+        width="100%"
+        height="550px"
+    ></iframe>
 
-    <!--========================contact-us========================== -->
     <section class="contact-us">
         <div class="container">
             <div class="row">
@@ -300,48 +298,20 @@
                             <li><i class="icomoon-icon-phone"></i><a href="tel:0281 2223177">0281 2223177</a></li>
                             <li><i class="icomoon-icon-mail2"></i><a href="mailto:kkcredible@gmail.com">kkcredible@gmail.com</a></li>
                             <li><i class="icomoon-icon-clock"></i>Mon - Sat, 10AM to 8PM</li>
+                            <li>
+                                <a target="_blank"
+                                    href="//mobile.switchitapp.com/vcard/ef2fc6b3-1288-4c42-b821-be0838d64370"
+                                >
+                                    <i class="icomoon-icon-address-book"></i>
+                                    Digital Card
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyBB4MPzf79kEgoFMmizAppGA45F9DaeidQ"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var gmMapDiv = $("#map-section");
-
-            if (gmMapDiv.length) {
-                    var gmCenterAddress = gmMapDiv.attr("data-address");
-                    var gmMarkerAddress = gmMapDiv.attr("data-address");
-
-                    gmMapDiv.gmap3({
-                    action: "init",
-                    marker: {
-                        address: gmMarkerAddress,
-                        options: {
-                            icon: "images/others/marker.png"
-                        }
-                    },
-                    map: {
-                        options: {
-                            zoom: 18,
-                            zoomControl: true,
-                            zoomControlOptions: {
-                                style: google.maps.ZoomControlStyle.SMALL
-                            },
-                            mapTypeControl: false,
-                            scaleControl: false,
-                            scrollwheel: false,
-                            draggable: true,
-                        }
-                    }
-                });
-            }
-        });
-    </script>
-
         <footer>
             <div class="main-footer">
                 <div class="container">
@@ -455,7 +425,6 @@
     <script type="text/javascript" src="js/jquery.countTo.js"></script>
     <script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-    <script type="text/javascript" src="js/gmap3.min.js"></script>
     <script type="text/javascript" src="js/validate.js"></script>
 
     <!-- Custom js -->
