@@ -102,9 +102,14 @@
 }
 @media (max-width: 767px) {
 
-	.header-info{
-		display: none;
-	}
+    .header-info li:first-child {
+        float: left;
+        margin-left: 35px;
+        padding-left: 35px;
+    }
+    .header-info li {
+        padding-bottom: 15px;
+    }
 	.main-header .get-btn{
 		display: none;
 	}

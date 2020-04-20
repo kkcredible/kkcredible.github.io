@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,400italic,600,600italic,700,700italic,900italic,900,300,300italic%7COpen+Sans:400,400italic,700,700italic'
-        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,400italic,600,600italic,700,700italic,900italic,900,300,300italic%7COpen+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style/owl.transitions.css">
     <link rel="stylesheet" type="text/css" href="style/owl.carousel.css">
@@ -17,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="style/responsive.css">
     <link rel="stylesheet" type="text/css" href="style/icons.css">
 </head>
+
 <body>
     <div class="site-container">
         <header class="main-header">
@@ -31,7 +31,7 @@
                             </p>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 text-center">
                             <a href="//play.google.com/store/apps/details?id=com.tvs.investwell" target="_blank">
                                 <img src="images/google-play.png" alt="Get it on Google play store">
                             </a>
@@ -57,19 +57,13 @@
                             </ul>
 
                             <div class="login-button">
-                                <a href="https://kkcredible.my-portfolio.in"
-                                    class="theme-btn appt-btn"
-                                    target="_blank"
-                                >
+                                <a href="https://kkcredible.my-portfolio.in" class="theme-btn appt-btn" target="_blank">
                                     Login
                                 </a>
                             </div>
 
                             <div class="login-button">
-                                <a href="https://www.nsenmf.com/MFDLogin.aspx"
-                                    class="theme-btn appt-btn"
-                                    target="_blank"
-                                >
+                                <a href="https://www.nsenmf.com/MFDLogin.aspx" class="theme-btn appt-btn" target="_blank">
                                     For Transactions
                                 </a>
                             </div>
@@ -252,6 +246,10 @@
                                         <li>
                                             <a href="children-education-planning.html">Children Education/Marriage Planning</a>
                                         </li>
+
+                                        <li>
+                                            <a href="basic-rules-financial-world.html">Basic rules of financial world</a>
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -305,6 +303,9 @@
                                 <li>
                                     <a href="children-education-planning.html">Children Education/Marriage Planning</a>
                                 </li>
+                                <li>
+                                    <a href="basic-rules-financial-world.html">Basic Rules of Financial World</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -332,13 +333,19 @@
                                 </iframe>
                             </div>
 
-                            <p>
-                                For further information or guidance please
-                                    <a href="contact-us.html">
-                                        Contact Us
-                                    </a>
-                                , we will be pleased to be helpful to you.
-                            </p>
+                            <div class="col-md-7">
+                                <div class="error-message"></div>
+                                <form method="post" class="contact-form">
+                                    <input type="text" name="_gotcha" style="display:none">
+
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                    <input type="text" name="subject" placeholder="Subject" required>
+                                    <textarea name="message" placeholder="Message"></textarea>
+
+                                    <button type="submit" class="submit">submit now</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
