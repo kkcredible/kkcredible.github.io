@@ -1,0 +1,20 @@
+[build]
+    publish="dist"
+    functions="functions"
+[dev]
+    publish="dist"
+    functions="functions"
+
+[[redirects]]
+    from = "/get-newsletters"
+    to = "/.netlify/functions/getNewsletters/getNewsletters.js"
+    status = 200
+[[redirects]]
+    from = "/add-new-newsletter"
+    to = "/.netlify/functions/addNewNewsletter/addNewNewsletter.js"
+    status = 200
+[[redirects]]
+    from = "/edit-newsletter"
+    to = "/.netlify/functions/editNewsletter/editNewsletter.js?id=:id"
+    query = { id = ":id"}
+    status = 200

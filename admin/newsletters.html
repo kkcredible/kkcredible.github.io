@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - KKcredible</title>
+    <script type="text/javascript" src="//identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin/newsletters.html">
+        KKCredible
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/newsletters.html">
+                    Newsletters
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <button type="button" class="btn btn-link nav-link" onclick="logoutUser()">
+                    Logout
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <a class="btn btn-primary btn-sm float-right mb-3" href="/admin/add-newsletter.html">
+                    Add New Newsletter
+                </a>
+
+                <div class="clearfix"></div>
+
+                <table class="table" id="newsletters-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Link</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="newsletter-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <template id="newsletter-row">
+        <tr class="newsletter-table-row">
+            <th class="id"></th>
+
+            <td class="title"></td>
+
+            <td>
+                <a class="link" target="_blank">
+                </a>
+            </td>
+
+            <td class="action">
+                <a class="btn btn-warning btn-sm edit-newsletter-btn">
+                    Edit
+                </a>
+
+                <button class="btn btn-danger btn-sm delete-newsletter-btn">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    </template>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <script>
+        // if (! netlifyIdentity.currentUser()) {
+        //     window.location.href = "/admin";
+        //     return;
+        // }
+
+
+        $(document).ready(function() {
+            $('#newsletters-table').DataTable();
+        });
+        axios.get('/js/newsletters.json').then(function (response) {
+            var newsletters = response.data;
+            for (const id in newsletters) {
+                $('#newsletter-table-body').append($('#newsletter-row').html());
+                var newsletterRow = $('#newsletter-table-body .newsletter-table-row').last();
+                newsletterRow.find('.id').html(parseInt(id) + 1);
+                newsletterRow.find('.title').html(newsletters[id].title);
+                newsletterRow.find('.link').html(newsletters[id].link);
+                newsletterRow.find('.link').attr('href', newsletters[id].link);
+                newsletterRow.find('.edit-newsletter-btn').attr('href', '/admin/edit-newsletter.php?id='+(parseInt(id) + 1));
+                newsletterRow.find('.delete-newsletter-btn').attr('data-id', id).attr('data-title', newsletters[id].title);
+            }
+        });
+
+        function logoutUser() {
+            netlifyIdentity.logout();
+
+            window.location.href = "/admin";
+        }
+    </script>
+</body>
+</html>

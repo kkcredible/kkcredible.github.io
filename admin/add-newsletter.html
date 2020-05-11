@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - KKcredible</title>
+    <script type="text/javascript" src="//identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin/newsletters.html">
+        KKCredible
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/newsletters.html">
+                    Newsletters
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <button type="button" class="btn btn-link nav-link" onclick="logoutUser()">
+                    Logout
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="container mt-5">
+        <div class="card">
+            <h2 class="card-header text-center">
+                Add New Newsletter
+            </h2>
+
+            <div class="card-body">
+                <form id="add-newsletter-form" method="post">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="link">Link</label>
+                        <input type="text" class="form-control" id="link">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Add New Newsletter
+                    </button>
+
+                    <a href="/admin/newsletters.html" class="btn btn-warning">
+                        Cancel
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // if (! netlifyIdentity.currentUser()) {
+        //     window.location.href = "/admin";
+        // }
+        $('#add-newsletter-form').submit(function (event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
