@@ -1901,6 +1901,32 @@ caption {
 .m-0 {
     margin: 0 !important;
 }
-.d-inline-block{
+.d-inline-block {
     display: inline-block;
+}
+.header-paperless-container {
+    display: inline-block;
+}
+
+.header-paperless-text {
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+}
+.header-transaction-container {
+    text-align: right;
+}
+@media only screen and (max-width: 982px) {
+    .header-paperless-container,
+    .header-paperless-text {
+        display: block;
+    }
+
+    .header-paperless-button {
+        margin-top: 10px;
+    }
+
+    .header-transaction-container {
+        text-align: center;
+        margin-top: 15px;
+    }
 }
