@@ -100,7 +100,8 @@
         $(document).ready(function() {
             $('#newsletters-table').DataTable();
         });
-        axios.get('/js/newsletters.json').then(function (response) {
+
+        axios.get('/get-newsletters').then(function (response) {
             var newsletters = response.data;
             for (const id in newsletters) {
                 $('#newsletter-table-body').append($('#newsletter-row').html());
