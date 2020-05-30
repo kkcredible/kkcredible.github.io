@@ -102,8 +102,6 @@
         });
 
         axios.get('/get-newsletters').then(function (response) {
-            console.log(response);
-
             var newsletters = response.data;
             for (const id in newsletters) {
                 $('#newsletter-table-body').append($('#newsletter-row').html());

@@ -1,4 +1,3 @@
-// Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 const fileSystem = require('fs');
 const util = require('util');
 

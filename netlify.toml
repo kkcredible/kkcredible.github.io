@@ -13,10 +13,10 @@
     status = 200
 [[redirects]]
     from = "/add-new-newsletter"
-    to = "/.netlify/functions/newsletters/addNewNewsletter.js"
+    to = "/.netlify/functions/add-new-newsletter/add-new-newsletter.js"
     status = 200
 [[redirects]]
     from = "/edit-newsletter"
-    to = "/.netlify/functions/newsletters/editNewsletter.js?id=:id"
+    to = "/.netlify/functions/edit-newsletter/edit-newsletter.js?id=:id"
     query = { id = ":id"}
     status = 200
