@@ -1,9 +1,11 @@
 [build]
-    publish=""
-    functions="functions"
+    base = "/"
+    publish="/"
+    functions="functions/"
 [dev]
-    publish=""
-    functions="functions"
+    base = "/"
+    publish="/"
+    functions="functions/"
 
 [[redirects]]
     from = "/get-newsletters"
