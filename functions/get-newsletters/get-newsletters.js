@@ -1,14 +1,18 @@
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
+const fileSystem = require('fs');
+const util = require('util');
+
 exports.handler = async (event, context) => {
   try {
-    const subject = event.queryStringParameters.name || 'World'
-    // const newsletters = fileSystem.readFile('database/newsletters.json');
+    const getNewslettersFrom = util.promisify(fileSystem.readFile).bind(fileSystem);
+
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `Hello ${subject}` }),
-      // // more keys you can return:
-      // headers: { "headerName": "headerValue", ... },
-      // isBase64Encoded: true,
+      body: JSON.stringify({
+        newsletters: await getNewslettersFrom('./database/newsletters.json').then((requestResults) => {
+          return JSON.parse(requestResults);
+        })
+      }),
     }
   } catch (err) {
     return { statusCode: 500, body: err.toString() }
