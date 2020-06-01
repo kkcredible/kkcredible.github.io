@@ -78,7 +78,7 @@
         alertify.set('notifier', 'position', 'top-right');
         alertify.set('notifier', 'delay', 10);
 
-        axios.post('/edit-newsletter' + window.location.search, {
+        axios.get('/edit-newsletter' + window.location.search, {
             title: $('#title').val(),
             link: $('#link').val(),
         }).then(function (response) {
