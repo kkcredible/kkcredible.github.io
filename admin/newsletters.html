@@ -102,7 +102,7 @@
         });
 
         axios.get('/get-newsletters').then(function (response) {
-            var newsletters = response.data;
+            var newsletters = response.data.newsletters;
             for (const id in newsletters) {
                 $('#newsletter-table-body').append($('#newsletter-row').html());
                 var newsletterRow = $('#newsletter-table-body .newsletter-table-row').last();
