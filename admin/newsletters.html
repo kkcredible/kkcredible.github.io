@@ -108,7 +108,7 @@
                 newsletterRow.find('.title').html(newsletters[id].title);
                 newsletterRow.find('.link').html(newsletters[id].link);
                 newsletterRow.find('.link').attr('href', newsletters[id].link);
-                newsletterRow.find('.edit-newsletter-btn').attr('href', '/admin/edit-newsletter.php?id='+(parseInt(id) + 1));
+                newsletterRow.find('.edit-newsletter-btn').attr('href', '/admin/edit-newsletter.html?id='+(parseInt(id) + 1));
                 newsletterRow.find('.delete-newsletter-btn').attr('data-id', id).attr('data-title', newsletters[id].title);
             }
 
