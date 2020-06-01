@@ -1,0 +1,14 @@
+{
+  "name": "kkcredible",
+  "version": "1.0.0",
+  "description": "",
+  "main": "add-new-newsletter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gists": "^2.0.0"
+  }
+}
