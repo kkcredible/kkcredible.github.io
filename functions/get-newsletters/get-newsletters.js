@@ -1,6 +1,5 @@
 const fileSystem = require('fs');
 const util = require('util');
-const path = require("path")
 
 exports.handler = async (event, context) => {
   try {
@@ -9,7 +8,7 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 200,
       body: JSON.stringify({
-        newsletters: await getNewslettersFrom(path.join(process.cwd(), './database/newsletters.json')).then((requestResults) => {
+        newsletters: await getNewslettersFrom('./database/newsletters.json').then((requestResults) => {
           return JSON.parse(requestResults);
         })
       }),
