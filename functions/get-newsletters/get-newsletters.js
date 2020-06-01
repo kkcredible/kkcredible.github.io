@@ -3,7 +3,7 @@ const util = require('util');
 
 exports.handler = async (event, context) => {
   try {
-    const getNewslettersFrom = util.promisify(fileSystem.readFile).bind(fileSystem);
+    const getNewslettersFrom = util.promisify(fileSystem.readFileSync).bind(fileSystem);
 
     return {
       statusCode: 200,
