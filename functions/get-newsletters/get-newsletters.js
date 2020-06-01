@@ -5,7 +5,7 @@ const path = require('path');
 exports.handler = async (event, context) => {
   try {
     // const getNewslettersFrom = util.promisify(fileSystem.readFileSync).bind(fileSystem);
-    const directories = util.readdir(fileSystem.readFileSync).bind(fileSystem);
+    const directories = util.promisify(fileSystem.readdir).bind(fileSystem);
 
     // fileSystem.readdir(path.join(), function (err, data) {
     //   console.log(data);
