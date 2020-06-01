@@ -97,12 +97,10 @@
         // }
 
 
-        $(document).ready(function() {
-            $('#newsletters-table').DataTable();
-        });
-
         axios.get('/get-newsletters').then(function (response) {
             var newsletters = response.data.newsletters;
+            $('#newsletter-table-body').html('');
+
             for (const id in newsletters) {
                 $('#newsletter-table-body').append($('#newsletter-row').html());
                 var newsletterRow = $('#newsletter-table-body .newsletter-table-row').last();
@@ -113,6 +111,8 @@
                 newsletterRow.find('.edit-newsletter-btn').attr('href', '/admin/edit-newsletter.php?id='+(parseInt(id) + 1));
                 newsletterRow.find('.delete-newsletter-btn').attr('data-id', id).attr('data-title', newsletters[id].title);
             }
+
+            $('#newsletters-table').DataTable();
         });
 
         function logoutUser() {

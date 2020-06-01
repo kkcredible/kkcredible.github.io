@@ -79,7 +79,7 @@
 
         $('#add-newsletter-form').submit(function (event) {
             event.preventDefault();
-            if (! $('title').val() || ! $('link').val()) {
+            if (! $('#title').val() || ! $('#link').val()) {
                 alertify.error('Please fill all fields.');
                 return;
             }
