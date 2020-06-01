@@ -1,6 +1,6 @@
 const Gists = require('gists');
 
-exports.handler = async (event, context) => {
+exports.handler = async function (event, context) {
   try {
     if (event.httpMethod != 'GET') {
       return {
