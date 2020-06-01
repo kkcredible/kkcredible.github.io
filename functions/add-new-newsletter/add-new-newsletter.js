@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
 
   try {
     const getNewslettersFrom = util.promisify(fileSystem.readFile).bind(fileSystem);
-    let newsletters = await getNewslettersFrom('./database/newsletters.json').then((requestResults) => {
+    let newsletters = await getNewslettersFrom('./src/database/newsletters.json').then((requestResults) => {
       return JSON.parse(requestResults);
     });
 
@@ -19,7 +19,7 @@ exports.handler = async (event, context) => {
       link: parameters.link,
     });
 
-    fileSystem.writeFile('./database/newsletters.json', JSON.stringify(newsletters), function (err) {
+    fileSystem.writeFile('./src/database/newsletters.json', JSON.stringify(newsletters), function (err) {
       if (err) throw err;
     });
 

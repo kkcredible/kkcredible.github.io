@@ -12,14 +12,14 @@ exports.handler = async (event, context) => {
     let newsletterKey = event.queryStringParameters.id - 1;
 
     const getNewslettersFrom = util.promisify(fileSystem.readFile).bind(fileSystem);
-    let newsletters = await getNewslettersFrom('./database/newsletters.json').then((requestResults) => {
+    let newsletters = await getNewslettersFrom('./src/database/newsletters.json').then((requestResults) => {
       return JSON.parse(requestResults);
     });
 
     newsletters[newsletterKey].title = parameters.title;
     newsletters[newsletterKey].link = parameters.link;
 
-    fileSystem.writeFile('./database/newsletters.json', JSON.stringify(newsletters), function (err) {
+    fileSystem.writeFile('./src/database/newsletters.json', JSON.stringify(newsletters), function (err) {
       if (err) throw err;
     });
 
