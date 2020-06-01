@@ -85,10 +85,11 @@
             }
 
             axios.post('/add-new-newsletter', {
-                title: $('title').val(),
-                link: $('link').val(),
+                title: $('#title').val(),
+                link: $('#link').val(),
             }).then(function (response) {
                 alertify.success('Newsletter added successfully.');
+                window.location = '/admin/newsletters.html'
             });
         });
     </script>

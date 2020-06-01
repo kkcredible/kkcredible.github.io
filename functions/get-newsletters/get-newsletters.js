@@ -2,6 +2,13 @@ const Gists = require('gists');
 
 exports.handler = async (event, context) => {
   try {
+    if (event.httpMethod != 'GET') {
+      return {
+        statusCode: 405,
+        body: 'Request method not supported'
+      };
+    }
+
     const gists = new Gists({
       username: 'hirenkeradiya@gmail.com',
       password: 'BQ&n43nX%7'

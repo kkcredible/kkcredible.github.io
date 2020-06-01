@@ -1,9 +1,8 @@
 const Gists = require('gists');
-const querystring = require('querystring');
 
 exports.handler = async (event, context) => {
   try {
-    if (event.httpMethod != 'GET') {
+    if (event.httpMethod != 'POST') {
       return {
         statusCode: 405,
         body: 'Request method not supported'
@@ -23,11 +22,24 @@ exports.handler = async (event, context) => {
 
     let newsletterKey = event.queryStringParameters.id - 1;
 
+    let parameters = JSON.parse(event.body);
+    newsletters[newsletterKey].title = parameters[0].title;
+    newsletters[newsletterKey].link = parameters[0].link;
+
+    const options = {
+      files: {
+        'newsletters.json': {
+          content: JSON.stringify(newsletters)
+        }
+      }
+    };
+
+    gists.edit('4ae6baef54175e1ddf8c186626b9f279', options);
+
     return {
       statusCode: 200,
       body: JSON.stringify({
-        status: 200,
-        newsletter: newsletters[newsletterKey]
+        status: 200
       }),
     }
   } catch (err) {

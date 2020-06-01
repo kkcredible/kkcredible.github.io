@@ -1,4 +1,3 @@
-const fileSystem = require('fs');
 const Gists = require('gists');
 
 exports.handler = async (event, context) => {

@@ -56,7 +56,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary">
-                        Edit Newsletter
+                        Update
                     </button>
 
                     <a href="/admin/newsletters.html" class="btn btn-warning">
@@ -78,19 +78,28 @@
         alertify.set('notifier', 'position', 'top-right');
         alertify.set('notifier', 'delay', 10);
 
+        axios.post('/edit-newsletter' + window.location.search, {
+            title: $('#title').val(),
+            link: $('#link').val(),
+        }).then(function (response) {
+            $('#title').val(response.data.newsletter.title);
+            $('#link').val(response.data.newsletter.link);
+        });
+
         $('#edit-newsletter-form').submit(function (event) {
             event.preventDefault();
 
-            if (!$('title').val() || !$('link').val()) {
+            if (!$('#title').val() || !$('#link').val()) {
                 alertify.error('Please fill all fields.');
                 return;
             }
 
-            axios.post('/edit-newsletter', {
-                title: $('title').val(),
-                link: $('link').val(),
+            axios.post('/update-newsletter' + window.location.search, {
+                title: $('#title').val(),
+                link: $('#link').val(),
             }).then(function (response) {
                 alertify.success('Newsletter updated successfully.');
+                window.location = '/admin/newsletters.html'
             });
         });
     </script>

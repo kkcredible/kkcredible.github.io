@@ -20,3 +20,8 @@
     to = "/.netlify/functions/edit-newsletter/edit-newsletter.js?id=:id"
     query = { id = ":id"}
     status = 200
+[[redirects]]
+    from = "/update-newsletter"
+    to = "/.netlify/functions/update-newsletter/update-newsletter.js?id=:id"
+    query = { id = ":id"}
+    status = 200
