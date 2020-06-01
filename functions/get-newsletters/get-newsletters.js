@@ -1,28 +1,25 @@
-const fileSystem = require('fs');
-const util = require('util');
+const Gists = require('gists');
 
 exports.handler = async (event, context) => {
   try {
-    const getNewslettersFrom = util.promisify(fileSystem.readdir).bind(fileSystem);
+    const gists = new Gists({
+      username: 'hirenkeradiya@gmail.com',
+      password: 'BQ&n43nX%7'
+    });
+
+    let newsletters = [];
+    await gists.get('4ae6baef54175e1ddf8c186626b9f279')
+      .then(function (response) {
+        newsletters = response.body.files['newsletters.json'].content
+      })
+    ;
 
     return {
       statusCode: 200,
       body: JSON.stringify({
-        newsletters: await getNewslettersFrom('../task').then((requestResults) => {
-          return requestResults;
-        })
+        newsletters: JSON.parse(newsletters)
       }),
     }
-    // const getNewslettersFrom = util.promisify(fileSystem.readFile).bind(fileSystem);
-
-    // return {
-    //   statusCode: 200,
-    //   body: JSON.stringify({
-    //     newsletters: await getNewslettersFrom('./src/database/newsletters.json').then((requestResults) => {
-    //       return JSON.parse(requestResults);
-    //     })
-    //   }),
-    // }
   } catch (err) {
     return { statusCode: 500, body: err.toString() }
   }
