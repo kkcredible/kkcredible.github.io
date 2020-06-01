@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 200,
       body: JSON.stringify({
-        newsletters: await getNewslettersFrom('../../database/newsletters.json').then((requestResults) => {
+        newsletters: await getNewslettersFrom('../../../database/newsletters.json').then((requestResults) => {
           return JSON.parse(requestResults);
         })
       }),
