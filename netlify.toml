@@ -9,19 +9,19 @@
 
 [[redirects]]
     from = "/get-newsletters"
-    to = ".netlify/functions/get-newsletters/get-newsletters.js"
+    to = "/.netlify/functions/get-newsletters/get-newsletters.js"
     status = 200
 [[redirects]]
     from = "/add-new-newsletter"
-    to = ".netlify/functions/add-new-newsletter/add-new-newsletter.js"
+    to = "/.netlify/functions/add-new-newsletter/add-new-newsletter.js"
     status = 200
 [[redirects]]
     from = "/edit-newsletter"
-    to = ".netlify/functions/edit-newsletter/edit-newsletter.js?id=:id"
+    to = "/.netlify/functions/edit-newsletter/edit-newsletter.js?id=:id"
     query = { id = ":id"}
     status = 200
 [[redirects]]
     from = "/update-newsletter"
-    to = ".netlify/functions/update-newsletter/update-newsletter.js?id=:id"
+    to = "/.netlify/functions/update-newsletter/update-newsletter.js?id=:id"
     query = { id = ":id"}
     status = 200
