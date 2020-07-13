@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Best Financial Planning Advisory in Rajkot | KKCredible </title>
-    <meta name="description" content="Prepare individual financial plans with us! We, at KKCredible, provide the best financial planning services along with managing your assets in Rajkot. Come Today!"/>
+    <title>Images and Videos Gallery | KKCredible </title>
+    <meta name="description" content="KKCredible - find here our graphics and videos that we made to explain our services in better way; You will get all things easily for our services."/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -180,12 +180,12 @@
                                             <a href="insurance.html">Insurance</a>
                                         </li>
 					<li>
-					<a href='sip-planning-service.html'>SIP</a>
+						<a href="sip-planning-service.html">SIP </a>
 					</li>
 					<li>
-					<a href='tax-free-capital-gain-bonds.html'>Bonds Services</a>
-					</li>     
-
+						<a href="tax-free-capital-gain-bonds.html">Bonds Services </a> 
+					</li>
+					    
                                     </ul>
                                 </li>
 
@@ -261,21 +261,14 @@
                                     </ul>
                                 </li>
 
-                               <li class="drop">
-                                    <a>
-                                        Blogs/Newsletters
-                                    </a>
-
-                                    <ul class="dropdown">
+                              <ul class="dropdown">
                                         <li>
                                             <a href="blog.html">Blogs</a>
                                         </li>
-
-                                        <li>
-                                           <a href="newsletter.html">Newsletters</a>
+					<li>
+                                            <a href="newsletter.html">Newsletters</a>
                                         </li>
-                                    </ul>
-                                </li>
+				</ul>
 
                                 <li>
                                     <a href="contact-us.html">Contact Us</a>
@@ -289,206 +282,81 @@
     <!--========================Page heading========================== -->
     <div class="page-heading">
         <div class="container">
-            <h1 class="stripe"style="color:#ffffff; font-size:30px;" >Financial Planning Services</h1>
+            <h1 class="stripe" style="font-size:30px; color:#ffffff">Images / Videos</h1>
         </div>
     </div>
+    <style>
+        #images-container .service-item {
+            min-width: 360px;
+            min-height: 686px;
+        }
+        .youtube-video {
+            margin: 30px 10px;
+        }
+    </style>
     <!-- Page heading -->
 
-    <!--========================Single Services========================== -->
-    <section class="single-service">
+    <!--========================Services========================== -->
+    <section class="services">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="sidebar">
-                        <div class="widget vertical-menu">
-                            <ul>
-                                <li>
-                                    <a href="nri-services.html">NRI Services</a>
-                                </li>
-                                <li>
-                                    <a href="nri-taxation.html">NRI Taxation</a>
-                                </li>
-                                <li class="selected">
-                                    <a href="financial-planning.html">Financial Planning</a>
-                                </li>
-                                <li>
-                                    <a href="tax-planning.html">Tax Planning</a>
-                                </li>
-                                <li>
-                                    <a href="insurance-planning.html">Insurance Planning</a>
-                                </li>
-                                <li>
-                                    <a href="retirement-planning.html">Retirement Planning</a>
-                                </li>
-                                <li>
-                                    <a href="children-education-planning.html">Children Education/Marriage Planning</a>
-                                </li>
-                                <li>
-                                    <a href="basic-rules-financial-world.html">Basic Rules of Financial World</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="services-wrapp">
-                        <div class="services-post">
-                            <h2>The Fundamentals of Financial Planning Services: </h2>
-			    <br>
-                            <p>
-                                The financial decisions you are making at present can determine how you will live in the future. Financial planning is defined as family budgeting to establish a plan and goal to achieve them. In today’s financial world, it has become tough and complicated to plan for the future. 
-                        <br>
-			<p>
-				As the financial conditions are varying from simple to complex and goals are individual, it is better to seek help from a financial planning advisor in Rajkot so that your money remains steady.
-			</p>
-			<br>
-				<strong style="color:#30344D; font-size:20px;">Get Financial Guidance From An Expert </strong>
-				<br>
-				<br>
-				<p>
-					This is the smart move to get expert financial guidance that you make at any stage of life. The advisors have completed various programs and well-experienced in the field of financial planning. The advisors have already passed the exam with ethical and fiduciary standards to provide you with the best financial planning services. 
-				</p>
-				<br>
-				<p>
-					The advisors' main objective is to deliver you a comprehensive financial planning strategy to meet all your financial requirements.
-				</p>
-				<br>
-				
-				<h3>The Benefits You Get Of Having A Financial Plan: </h3>
-				<p>
-					A lot of people, regardless of age or going through any stage in life, are establishing financial plans with <a href="https://www.kkcredible.com/investment-avenues"><b>proper investment planning</a></b> which help them track their future goals. This also helps in enhancing your confidence in financial management. When you plan and review perfectly, there are high chances your financial goals will increase significantly.
-				</p>
-				<br>
-				<p>
-					By having a clear financial plan lets you balance various financial priorities. You can simply decide how to prioritize your goals with the help of the information collected, relevant strategies implemented, choosing products or services to move along towards the right path to meet your financial goals.
-				</p>
-				<br>
-				<p>
-					Proper financial planning offers protection by measuring today and tomorrow like:
-				</p>
-				<ul class="circle">
-				<li class="p-3">
-					It protects your current lifestyle
-				</li>
-				
-				<li class="p-3">
-					When you run out of money, it gives you protection
-				</li>
-					
-				<li class="p-3">
-					It gives protection regarding what you want to leave behind
-				</li>
-					
-				</ul>
-                            <br>
-				<h4>Financial services explained: </h4>
-			        <ul class="circle">
-				<li class="p-3">
-					<b>Estate Planning: </b>
-				</li>
-				</ul>
-				<br>
-				<p>
-					Whether it is the foundational estate planning basics or any intricate planning problems such as complicated family conditions, assets, or any other type of saturations. You can take help from the financial planning advisor in Rajkot, and the advisors will help you prepare for countless life scenarios.
-				</p>
-				<br>
-				<ul class="circle">
-				<li class="p-3">
-					<b>Tax Planning: </b>
-				</li>
-				</ul>
-				<br>
-				<p>
-					The time when you file your tax return by yourself or take the help of an accountant for preparing the taxes; you think about how your finances influenced in the past year. 
-				</p>
-				<br>
-				<p>
-					However, with the help of expert advisors, you need not have to worry; they have a proactive approach to tax planning in order to help you understand the tax situation you may face in the future. This will help you in making effective decisions today for securing your future wealth.	
-				</p>
-				<ul class="circle">
-				<li class="p-3">
-					<b>Education Planning:  </b>
-				</li>
-				</ul>
-				<br>
-				<p>
-					Nowadays, opting for higher education has become expensive, and to provide children to pay for the college, you must look for financial advisors to get proper financial planning help.
-				</p>
-				<br>
-				<ul class="circle">
-				<li class="p-3">
-					<b>Retirement Planning:   </b>
-				</li>
-				</ul>
-				<br>
-				<p>
-					<a href="https://www.kkcredible.com/retirement-planning"><b>Retirement planning</b></a> involves extensive approaches such as tax planning, estate planning, investment management, and much more. In this situation, the financial advisors provide you essential strategies for setting and meeting your retirement goals.
-				</p>
-				<br>	
-				<ul class="circle">
-				<li class="p-3">
-					<b>Investment Management: </b>
-				</li>
-				</ul>
-				<br>
-				<p>
-					To invest your life’s savings is a crucial matter. When you take help from the financial advisors, they believe that high-quality financial planning services are necessary factors for a successful investing experience. The investment ideas they put consist of academic research to provide excellent returns over time.
-				</p>
-				<br>	
-				
-				<ul class="circle">
-				<li class="p-3">
-					<b>The Budgeting: </b>
-				</li>
-				</ul>
-				<br>
-				<p>
-					The financial advisors give you a proper budget calculation based upon your current situations; in order to make sure you spend according to your financial situation, not having any unnecessary debt.
-				</p>
-				<br>	
-				<strong>The work of your financial advisor </strong>
-				<br>
-				<br>
-				<p>
-					When you look for a financial planning advisor in Rajkot, the professional advisor will listen to your situations and reveal your financial goals based on your wealth management needs. They will prepare and analyze your balance sheet by considering your savings, cash flow planning, budgeting, and net worth. 
-				</p>
-				<br>
-				<strong>To Sum It Up </strong>
-				<br>
-				<br>
-				<p>
-					They will help you to manage the income taxes, investments, estate plans, education plans, and retirement plans, making them work together. They will also look for potential risks to keep more wealth for you and your family’s financial future. 
-				</p>
-				<br>
+            <div class="section-title align-center col-md-12">
+                <h2 class="stripe" style="font-size:25px">Images</h2>
+            </div>
 
-			    <br>	
-				
-                            <img src='images/services/financial-planning.jpeg' alt='Financial Planning'>
+            <div class="row" id="images-container">
+                <!-- Render images here Randomply from download folder -->
+            </div> <br><br>
 
-                            <br>
-                            <br>
+            <div class="section-title align-center col-md-12">
+                <h3 class="stripe" style="font-size:25px">VIDEOS </h3>
+            </div>
 
-                            <div class="col-md-7">
-                                <div class="error-message"></div>
-                                <h3>Contact Us:</h3>
-                                <form method="post" class="contact-form">
-                                    <input type="text" name="_gotcha" style="display:none">
-
-                                    <input type="text" name="name" placeholder="Your Name" required>
-                                    <input type="email" name="email" placeholder="Your Email" required>
-                                    <input type="text" name="subject" placeholder="Subject" required>
-                                    <textarea name="message" placeholder="Message"></textarea>
-
-                                    <button type="submit" class="submit">submit now</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row" id="video-container">
+                <!-- Videos images here Randomply from download folder -->
             </div>
         </div>
     </section>
-    <!-- End Trades & Stocks -->
+
+    <script>
+        var imageURLs = [];
+        var videoURLs = [];
+        for (let i = 1; i <= 66; i++) {
+            imageURLs.push(i +'-image.jpg');
+            videoURLs.push(i +'-video.mp4');
+        }
+
+        function getImageTag() {
+            var img = '<div class="col-md-4"><div class="service-item second-row"><img src=\"images/loader.gif" data-image="images/downloads/images/';
+            var randomIndex = Math.floor(Math.random() * imageURLs.length);
+            img += imageURLs[randomIndex];
+            img += '\" class="img-responsive async-img" width="240"></div></div>';
+            return img;
+        }
+
+        function getVideoTag() {
+            var videos = [
+                'g_JfCm34adY', 'yI4sJ-f5fIA', 'WGdQNkGkFzU', 'qf7StPSIp9o', 'H2glTF3QmTA', 'wg-uzI1XfNc', 'atF8TrOJUWE', 'SdkpigbRMJg', 'kcsFdaV9Sfg', 'ynFmqVNDpBo', 'Cr9PcACmoz8', 'FNrpBzfb-JU', '0_Qpq27a7_8', 'g0TJusdPK2o', 'b6D__NoXe-w', 'ntEgX3UYoQs', 'cPNQYeBaYk4', '_qONyBvRpVI', 'A5HYToPDl6A', 'D14RjMIc3eM', 'CyqMt0DWqCk', '-EpvkuTEwdA', 'U-rhmew73og', 'y-6RKWTnAgw', 'I2V8TWmOB-0', 'fq4r66Sskzw', '2Ewz6cVNkS4', 'dOjvuzqEGiw', '9UJgxYOwoB8', 'GGasOSkVlEs', 'SEvk4D2dUAU', 'EEB39msgpxo', 'hfkh6PPqny4', 'JrJro8JvFkU', 'T8wYm1ErMGI', 'lyNzP2rT_dQ', 'E9D6JhlNyFM', 'tSocIPvlnyY', '_fjxraU5QFU', 'xVxatGtPYj4', 'aip3-8uE4iA', 'OkuvmhNxRVE', 'NSarOrysNbs', 'sN2RHVUQ5ds', 'SiV2BD77e38', 'svV5rBmjbms', 'JzQOUk6Hdms', 'W8k0MVH9dQE', 'j9qC2HHRVos', 'C9Mu_Z8pH5Y', 'FgQH74eVP4M', 'ZwEBZG1T3VA', '-m6nZ1jGaHg', 'OEUNsvFHYOE', 'qybpPZpBwI8', 'p25JQkpTFEI',
+            ];
+
+            var index = Math.floor(Math.random() * videos.length);
+            var html = '<div id="video"><h3>Random Video</h3> </div>';
+
+            var video = '<div class="col-xs-12 col-sm-6 col-md-4"><div class="embed-responsive embed-responsive-4by3"><iframe class="youtube-video embed-responsive-item" src="//www.youtube.com/embed/' + videos[index] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div></div>';
+
+            return video;
+        }
+
+        window.onload = function() {
+            for (let i = 0; i <= 5; i++) {
+                var images = $('#images-container').html();
+
+                $('#images-container').html(images + getImageTag());
+                loadImages();
+                var video = $('#video-container').html();
+                $('#video-container').html(video + getVideoTag());
+            }
+        };
+    </script>
 
     </div>
         <footer>
