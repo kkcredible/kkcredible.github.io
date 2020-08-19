@@ -213,9 +213,17 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://www.kkcredible.com/blog-and-newsletter</link>
-     <title>Blogs and NewsLetter | Financial Advisory | KKCredible </title>
-     <description>Read our newsletter &amp; blogs to get detailed information about planning your taxes on current FY. KKCredible provides various investment &amp; financial services.</description>
+     <link>https://www.kkcredible.com/blog</link>
+     <title>Blogs | KKCredible - Financial Planning Advisory </title>
+     <description>Read our blogs and get updated about various financial services. We provide various investment &amp; financial services at KKCredible Financial Services.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.kkcredible.com/newsletter</link>
+     <title>NewsLetter | Financial Advisory | KKCredible </title>
+     <description>Read our newsletter to get detailed information about planning your taxes on current FY. KKCredible Financial Services provides various investment &amp; financial services.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
@@ -226,6 +234,38 @@
      <description>Get Solutions for your financial issues from our experts with great assistance. Contact us for Tax and Investment planning service at KKCredible, Rajkot.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.kkcredible.com/mutual-fund-best-option-to-encourage-disciplined-investment</link>
+     <title>Mutual Fund: The best option to encourages disciplined Investment</title>
+     <description>Mutual Fund: The best option to encourages disciplined Investment</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.kkcredible.com/how-does-wealth-management-work-with-investment</link>
+     <title>How Does Wealth Management Work With An Investment?</title>
+     <description>How Does Wealth Management Work With An Investment?</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.kkcredible.com/sip-services-beneficial-way-to-invest-in-mutual-funds</link>
+     <title>SIP Services: Beneficial way to Invest in Mutual Funds </title>
+     <description>SIP Services: Beneficial way to Invest in Mutual Funds </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.kkcredible.com/how-to-save-tax-on-long-term-capital-gain</link>
+     <title>How to Save Tax on Long-term Capital Gain?</title>
+     <description>How to Save Tax on Long-term Capital Gain?</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
