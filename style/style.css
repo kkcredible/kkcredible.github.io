@@ -1930,3 +1930,7 @@ caption {
         margin-top: 15px;
     }
 }
+.title-text {
+    font-weight: bold;
+    margin-left: 40px;
+}
